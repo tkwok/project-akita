@@ -1,12 +1,12 @@
 {
-  "name": "upstatement/timber-starter-theme",
-  "description": "Starter theme to build a Timber theme",
+  "name": "project-akita-theme",
+  "description": "Project Akita WordPress Theme",
   "type":"wordpress-theme",
   "minimum-stability" : "stable",
   "authors": [
       {
-          "name": "jarednova",
-          "email": "jared@upstatement.com"
+          "name": "tkwok",
+          "email": "tony.kwok@tkwok.com"
       }
   ],
   "repositories": [
