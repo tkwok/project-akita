@@ -63,6 +63,9 @@ else:
     define('SECURE_AUTH_SALT', $_ENV['SECURE_AUTH_SALT']);
     define('LOGGED_IN_SALT',   $_ENV['LOGGED_IN_SALT']);
     define('NONCE_SALT',       $_ENV['NONCE_SALT']);
+    // Tony - set debugging on 
+    define('WP_DEBUG',true);
+    define('SAVEQUERIES', true);
     /**#@-*/
 
     /** A couple extra tweaks to help things run well on Pantheon. **/
