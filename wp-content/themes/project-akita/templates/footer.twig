@@ -8,16 +8,24 @@
             </ul>
         </div>
         <div class="col span-1-of-2">
-            {% if post.get_field('social_icons') %}
+            {% if post.get_field('social_link_icons') %}
             <ul class="social-links">
-                {% for item in post.get_field("social_icons") %}
-                    <li><a href="{{item.url}}"><i class="{{item.social_link}}"></i></a></li>
+                {% for item in post.get_field("social_link_icons") %}
+                    <li>
+                        <a href="{{item.social_icon_url}}">
+                            <i class="{{item.social_icon}}"></i>
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
             {% endif %}
         </div>
     </div>
     <div class="row">
-        <p>&copy; {{"now"|date('Y')}} TONY KWOK</p>
+        <div class="footer-copyright">
+            <p>&copy; {{"now"|date('Y')}} TONY KWOK</p>
+        </div>
     </div>
+    
+    
 </footer>
