@@ -8,7 +8,7 @@
 		}
 
 		function tearDown() {
-			switch_theme('twentythirteen');
+			switch_theme('');
 		}
 
 		function testFunctionsPHP() {
