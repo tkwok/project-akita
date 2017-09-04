@@ -1,0 +1,105 @@
+/* base colors */
+/* specific template colors */
+/* ---------------------------------- */
+/* Basic Setup */
+/* ---------------------------------- */
+/* line 12, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 19, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+html,
+body {
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden; }
+
+/* ---------------------------------- */
+/* Footer */
+/* ---------------------------------- */
+/* line 36, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 100%;
+  color: #888; }
+
+/* line 43, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.footer-nav {
+  list-style: none;
+  float: left; }
+
+/* line 48, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.social-links {
+  list-style: none;
+  float: right; }
+
+/* line 53, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px; }
+
+/* line 59, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0; }
+
+/* line 65, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.social-links li a:link,
+.social-links li a:visited,
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
+
+/* line 76, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd; }
+
+/* line 81, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%; }
+
+/* line 86, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-linkedin,
+.ion-social-github {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
+
+/* line 94, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.ion-social-facebook:hover {
+  color: #3b5998; }
+
+/* line 98, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.ion-social-twitter:hover {
+  color: #00aced; }
+
+/* line 102, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.ion-social-linkedin:hover {
+  color: #0077B5; }
+
+/* line 106, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.ion-social-github:hover {
+  color: #6e5494; }
+
+/* line 110, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+footer p {
+  text-align: center;
+  font-size: 60%;
+  margin-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */
