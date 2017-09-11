@@ -3,8 +3,11 @@
     <div class="row">
         <div class="col span-1-of-2">
             <ul class="footer-nav">
-                <li><a href="#">solutions</a></li>
-                <li><a href="#">contact</a></li>
+                    {% if post.get_field('header_nav_links') %}
+                        {% for item in post.get_field("header_nav_links") %}
+                            <li><a href="#{{ item.link_id }}">{{ item.link_title }}</a></li>
+                        {% endfor %}
+                    {% endif %}
             </ul>
         </div>
         <div class="col span-1-of-2">

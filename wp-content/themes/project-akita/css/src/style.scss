@@ -27,13 +27,69 @@ body {
 }
 
 
+
+/* ---- Buttons ------ */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    border: 2px solid #8e44ad;
+    color: #fff;
+    margin-right: 15px;
+}
+
+input[type=submit] {
+    background-color: #8e44ad;
+    cursor: pointer;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 2px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #8e44ad;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    border: 2px solid #8e44ad;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 2px solid #cf6d17;
+    color: #fff;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #683180;
+}
+
+
 /* ---------------------------------- */
 /* Header */
 /* ---------------------------------- */
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .7))), url(img/bg.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .7))), url(../../img/src/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../img/src/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -83,17 +139,18 @@ header {
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 0 8px;
-    color: #fff;
+    color: #aaa;
     text-decoration: none;
     font-size: 90%;
     border-left: 4px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
+    -webkit-transition: border-left 0.2s;
+    transition: border-left 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
     border-left: 4px solid #8e44ad;
+    color: #fff;
 }
 
 /* mobile nav */

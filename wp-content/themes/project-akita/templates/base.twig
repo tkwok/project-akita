@@ -5,6 +5,7 @@
 	{% endblock %}
 	</head>
     <header>
+        <!-- Header Navigation -->
         <nav>
             <div class="row">
                 <ul class="main-nav js--main-nav">                    
@@ -12,7 +13,7 @@
                         {% for item in post.get_field("header_nav_links") %}
                             <li><a href="#{{ item.link_id }}">{{ item.link_title }}</a></li>
                         {% endfor %}
-                     {% endif %}
+                    {% endif %}
                 </ul>
                 <a href="#" class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
@@ -21,6 +22,7 @@
             <h1><b>I am Tony Kwok</b><br>I am working on an Web Application<br>its language is NodeJS</h1>
             <a class="btn btn-full js--scroll-to-plan" href="#intro">tell me more</a>
         </div>
+        <!-- Header Navigation -->
     </header>
 
 
