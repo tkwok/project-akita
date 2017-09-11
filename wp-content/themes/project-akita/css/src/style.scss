@@ -105,6 +105,14 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.hero-text-box h1 {
+    color: #fff;
+}
+
+.hero-text-box h2 {
+    padding-bottom: 20px;
+}
+
 /* logo */
 .logo {
     height: 100px;
@@ -127,7 +135,8 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin: 55px 40px;
+
 }
 
 .main-nav li {

@@ -95,8 +95,16 @@ header {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+/* line 108, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.hero-text-box h1 {
+  color: #fff; }
+
+/* line 112, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+.hero-text-box h2 {
+  padding-bottom: 20px; }
+
 /* logo */
-/* line 109, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 117, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .logo {
   height: 100px;
   width: auto;
@@ -104,7 +112,7 @@ header {
   margin-top: 20px;
   color: #fff; }
 
-/* line 117, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 125, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .logo-black {
   height: 50px;
   width: auto;
@@ -114,19 +122,19 @@ header {
   color: #000; }
 
 /* main nav */
-/* line 127, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 135, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 55px; }
+  margin: 55px 40px; }
 
-/* line 133, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 142, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .main-nav li {
   display: inline-block;
   margin-left: 40px;
   margin-bottom: 20px; }
 
-/* line 139, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 148, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .main-nav li a:link,
 .main-nav li a:visited {
   padding: 0 8px;
@@ -137,33 +145,33 @@ header {
   -webkit-transition: border-left 0.2s;
   transition: border-left 0.2s; }
 
-/* line 150, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 159, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .main-nav li a:hover,
 .main-nav li a:active {
   border-left: 4px solid #8e44ad;
   color: #fff; }
 
 /* mobile nav */
-/* line 157, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 166, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .mobile-nav-icon {
   float: right;
   margin-top: 30px;
   cursor: pointer;
   display: none; }
 
-/* line 164, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 173, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .mobile-nav-icon i {
   color: #fff;
   font-size: 200%; }
 
 /* removes bottom line on mobile menu button */
-/* line 170, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 179, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .mobile-nav-icon:link,
 .mobile-nav-icon:visited {
   border-bottom: 0; }
 
 /* sticky nav */
-/* line 176, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 185, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .sticky {
   position: fixed;
   top: 0;
@@ -171,55 +179,55 @@ header {
   width: 100%;
   background-color: rgba(51, 51, 51, 0.85); }
 
-/* line 184, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 193, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .sticky .main-nav {
   margin-top: 18px; }
 
-/* line 188, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 197, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   color: #fff; }
 
-/* line 193, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 202, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .sticky .logo {
   display: none; }
 
-/* line 197, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 206, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .sticky .logo-black {
   display: block; }
 
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 206, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 215, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 footer {
   background-color: #333;
   padding: 50px;
   font-size: 100%;
   color: #888; }
 
-/* line 213, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 222, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .footer-nav {
   list-style: none;
   float: left; }
 
-/* line 218, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 227, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .social-links {
   list-style: none;
   float: right; }
 
-/* line 223, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 232, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .footer-nav li,
 .social-links li {
   display: inline-block;
   margin-right: 20px; }
 
-/* line 229, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 238, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .footer-nav li:last-child,
 .social-links li:last-child {
   margin-right: 0; }
 
-/* line 235, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 244, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .social-links li a:link,
 .social-links li a:visited,
 .footer-nav li a:link,
@@ -230,17 +238,17 @@ footer {
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
 
-/* line 246, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 255, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .footer-nav li a:hover,
 .footer-nav li a:active {
   color: #ddd; }
 
-/* line 251, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 260, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .social-links li a:link,
 .social-links li a:visited {
   font-size: 160%; }
 
-/* line 256, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 265, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-linkedin,
@@ -248,23 +256,23 @@ footer {
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
 
-/* line 264, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 273, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .ion-social-facebook:hover {
   color: #3b5998; }
 
-/* line 268, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 277, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .ion-social-twitter:hover {
   color: #00aced; }
 
-/* line 272, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 281, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .ion-social-linkedin:hover {
   color: #0077B5; }
 
-/* line 276, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 285, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 .ion-social-github:hover {
   color: #6e5494; }
 
-/* line 280, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
+/* line 289, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/style.scss */
 footer p {
   text-align: center;
   font-size: 60%;
