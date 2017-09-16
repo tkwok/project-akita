@@ -1,0 +1,47 @@
+    <section class="section-intro js--section-intro" id="intro">
+        <div class="row">
+            <h2>who is Tony Kwok</h2>
+            <p class="long-copy">
+                Hi. I am Tony Kwok. I am an experienced Frontend Developer and an aspiring  Fullstack Developer with, Web UX/UI design experience.
+            </p>
+
+            <div class="row">
+                {% if post.get_field('skills') %}
+                        {% for item in post.get_field("skills") %}
+                             <div class="col span-1-of-4 box">
+                                <i class="{item.icon} icon-big"></i>
+                                <h3>Frontend Platform/Web Application Development</h3>
+                                <p>Engaging platform development include data visualization</p>
+                            </div>
+                        {% endfor %}
+                {% endif %}
+<!--
+                
+                <div class="col span-1-of-4 box">
+                    <i class="ion-social-nodejs icon-big"></i>
+                    <h3>Frontend Platform/Web Application Development</h3>
+                    <p>Engaging platform development include data visualization</p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-social-tux icon-big"></i>
+                    <h3>Backend Development Experience</h3>
+                    <p>Familiar with MySQL and Java API development. Pursuing Python, MEAN stack development</p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-social-html5-outline icon-big"></i>
+                    <h3>Website Development</h3>
+                    <p>Responsive, clean business sites</p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-monitor-outline icon-big"></i>
+                    <h3>Flash/ActionScript Experience</h3>
+                    <p>Advertising and interactive experience customer/consumer engagement</p>
+                </div>
+-->
+            </div>
+
+        </div>
+    </section>

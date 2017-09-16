@@ -30,11 +30,14 @@
         </div>
         <!-- Header Navigation -->
     </header>
-
-
-
 {% endblock %}
+
 	<body class="{{body_class}}" data-template="base.twig">
+        
+
+        {% include "section-introduction.twig" %}
+
+        
 		{% block footer %}
 			<footer id="footer">
 				{% include 'footer.twig' %}
