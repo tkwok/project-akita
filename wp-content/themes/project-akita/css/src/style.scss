@@ -1,10 +1,7 @@
-/* base colors */
-$color-red: #ff0000;
-
-
-/* specific template colors */
-$footer-link-color: #888;
-
+/* Tony Kwok */
+/*
+  #8e44ad
+*/
 
 /* ---------------------------------- */
 /* Basic Setup */
@@ -26,6 +23,76 @@ body {
     overflow-x: hidden;
 }
 
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ---------------------------------- */
+/* Reusable Components */
+/* ---------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ---- Headings ------ */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 240%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #8e44ad;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* ---- Icons ------ */
+.icon-big {
+    display: block;
+    font-size: 350%;
+    color: #8e44ad;
+    margin-bottom: 10px;
+}
 
 
 /* ---- Buttons ------ */
@@ -82,7 +149,6 @@ input[type=submit]:active {
     background-color: #683180;
 }
 
-
 /* ---------------------------------- */
 /* Header */
 /* ---------------------------------- */
@@ -103,14 +169,6 @@ header {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.hero-text-box h1 {
-    color: #fff;
-}
-
-.hero-text-box h2 {
-    padding-bottom: 20px;
 }
 
 /* logo */
@@ -135,8 +193,7 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-    margin: 55px 40px;
-
+    margin-top: 55px;
 }
 
 .main-nav li {
@@ -148,18 +205,17 @@ header {
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 0 8px;
-    color: #aaa;
+    color: #fff;
     text-decoration: none;
     font-size: 90%;
     border-left: 4px solid transparent;
-    -webkit-transition: border-left 0.2s;
-    transition: border-left 0.2s;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
     border-left: 4px solid #8e44ad;
-    color: #fff;
 }
 
 /* mobile nav */
@@ -207,6 +263,47 @@ header {
     display: block;
 }
 
+/* ---------------------------------- */
+/* Intro */
+/* ---------------------------------- */
+
+.section-intro .long-copy {
+    margin-bottom: 40px;
+}
+
+
+
+/* ---------------------------------- */
+/* Form */
+/* ---------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none
+}
+
 
 /* ---------------------------------- */
 /* Footer */
@@ -215,8 +312,7 @@ header {
 footer {
     background-color: #333;
     padding: 50px;
-    font-size: 100%;
-    color: $footer-link-color;
+    font-size: 80%;
 }
 
 .footer-nav {
@@ -239,7 +335,6 @@ footer {
 .social-links li:last-child {
     margin-right: 0;
 }
-
 
 .social-links li a:link,
 .social-links li a:visited,
@@ -264,7 +359,7 @@ footer {
 
 .ion-social-facebook,
 .ion-social-twitter,
-.ion-social-linkedin,
+.ion-social-googleplus,
 .ion-social-github {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
@@ -278,16 +373,18 @@ footer {
     color: #00aced;
 }
 
-.ion-social-linkedin:hover {
-    color: #0077B5;
+.ion-social-googleplus:hover {
+    color: #dd4b39;
 }
 
 .ion-social-github:hover {
-    color: #6e5494;
+    color: #4078c0;
 }
 
 footer p {
+    color: #888;
     text-align: center;
-    font-size: 60%;
+    font-size: 90%;
     margin-top: 20px;
 }
+
