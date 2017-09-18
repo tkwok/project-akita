@@ -73,11 +73,19 @@
     font-size: 180%; }
   /* line 55, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/queries.scss */
   h2 {
-    font-size: 150%; } }
+    font-size: 150%; }
+  /* line 57, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/queries.scss */
+  footer {
+    padding: 30px; }
+  /* line 58, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/queries.scss */
+  .footer-nav, .social-links {
+    float: none;
+    text-align: center;
+    padding: 20px 0 20px; } }
 
 /* Small phones: from 0 to 480px iPhone older */
 @media only screen and (max-width: 480px) {
-  /* line 60, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/queries.scss */
+  /* line 64, /Users/tk/Kalabox/tony-dev/code/wp-content/themes/project-akita/css/src/queries.scss */
   section {
     padding: 25px 0; } }
 

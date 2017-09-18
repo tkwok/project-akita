@@ -54,7 +54,12 @@
   h1 {
     font-size: 180%; }
   h2 {
-    font-size: 150%; } }
+    font-size: 150%; }
+  footer {
+    padding: 30px; }
+  .footer-nav {
+    float: none;
+    text-align: center; } }
 
 /* Small phones: from 0 to 480px iPhone older */
 @media only screen and (max-width: 480px) {
