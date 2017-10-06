@@ -1,4 +1,3 @@
-
 # Project Akita Timber/WordPress Theme
 
 ## Installing the Theme

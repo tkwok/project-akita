@@ -15,6 +15,7 @@ var transform = require('vinyl-transform');
 var uglify = require('gulp-uglify');
 
 
+/* TODO only sass currently working make rest work and watches */
 gulp.task('sass', function () {
     gulp.src(themeDir + '/css/src/*.scss')
         .pipe(sass())
@@ -23,7 +24,6 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function () {
-
  	var browserified = transform(function(filename) {
     	return browserify(filename).bundle();
   	});

@@ -1,20 +1,20 @@
-    <section class="section-intro js--section-intro" id="intro">
-        <div class="row">
-            <h2>who is Tony Kwok</h2>
-            <p class="long-copy">
-                Hi. I am Tony Kwok. I am an experienced Frontend Developer and an aspiring  Fullstack Developer with, Web UX/UI design experience.
-            </p>
+<section class="section-intro js--section-intro" id="intro">
+    <div class="row">
+        <h2>{{ post.introduction_section_title }}</h2>
+        <p class="long-copy">
+            Hi. I am Tony Kwok. I am an experienced Frontend Developer and an aspiring  Fullstack Developer with, Web UX/UI design experience.
+        </p>
 
-            <div class="row">
-                {% if post.get_field('skills') %}
-                        {% for item in post.get_field("skills") %}
-                             <div class="col span-1-of-4 box">
-                                <i class="{{item.icon}} icon-big"></i>
-                                <h3>{{item.header}}</h3>
-                                <p>{{item.description}}</p>
-                            </div>
-                        {% endfor %}
-                {% endif %}
-            </div>
+        <div class="row">
+            {% if post.get_field('skills') %}
+                    {% for item in post.get_field("skills") %}
+                         <div class="col span-1-of-4 box">
+                            <i class="{{item.icon}} icon-big"></i>
+                            <h3>{{item.header}}</h3>
+                            <p>{{item.description}}</p>
+                        </div>
+                    {% endfor %}
+            {% endif %}
         </div>
-    </section>
+    </div>
+</section>
