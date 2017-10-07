@@ -35,6 +35,22 @@ body {
     visibility: hidden;
 }
 
+#move-to-top {
+    position: fixed;
+    cursor: pointer;
+    color: #fff;
+    bottom: 10px;
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all 0.25s linear 0s;
+    z-index: 25;
+    background: #222;
+    padding: 10px 10px 0 10px;
+    right: 10px;
+    box-shadow: 0 0 0 1px #fff;
+}
+
 /* ---------------------------------- */
 /* Reusable Components */
 /* ---------------------------------- */
@@ -271,6 +287,16 @@ header {
     margin-bottom: 40px;
 }
 
+
+/* ---------------------------------- */
+/* Blog Posts */
+/* ---------------------------------- */
+
+.section-blog {}
+
+.section-blog .post h1 {
+    color: #000;
+}
 
 
 /* ---------------------------------- */

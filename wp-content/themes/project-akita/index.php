@@ -15,12 +15,12 @@
 
 $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
-$context['menu'] = new TimberMenu('main-nav');
 
-$context['base_posts'] = Timber::get_posts('post_type=post');
 
 $templates = array( 'index.twig' );
 if ( is_home() ) {
 	array_unshift( $templates, 'home.twig' );
 }
 Timber::render( $templates, $context );
+
+echo 'console.log('. $context .')';

@@ -2,19 +2,14 @@
     <div class="row">
         <h2>Latest Posts</h2>
     </div>
-    <div class="row">
-        {% for post in base_posts %}
-            {{post.post_type}}
-<!--
-        <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.title}}</h1>
+    <div class="row">        
+        {% for post in posts %}
+        <article class="post post-type-{{post.post_type}}" id="post-{{post.ID}}">
+				<h1 class="article-header">{{post.title}}</h1>
 				<div class="article-body">
 					{{post.content}}
 				</div>
-			</section>
 		</article>
--->
         {% endfor %}
     </div>
 </section>
