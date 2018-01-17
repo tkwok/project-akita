@@ -1,16 +1,6 @@
 <!-- Footer Twig ---->
 <footer>    
     <div class="row">
-        <div class="col span-1-of-2">
-            <ul class="footer-nav">
-                    {% if post.get_field('header_nav_links') %}
-                        {% for item in post.get_field("header_nav_links") %}
-                            <li><a href="#{{ item.link_id }}">{{ item.link_title }}</a></li>
-                        {% endfor %}
-                    {% endif %}
-            </ul>
-        </div>
-        <div class="col span-1-of-2">
             {% if post.get_field('social_link_icons') %}
             <ul class="social-links">
                 {% for item in post.get_field("social_link_icons") %}
@@ -22,11 +12,10 @@
                 {% endfor %}
             </ul>
             {% endif %}
-        </div>
     </div>
     <div class="row">
         <div class="footer-copyright">
-            <p>&copy; {{"now"|date('Y')}} TONY KWOK</p>
+            <p>&copy; {{"now"|date('Y')}} <b>TONY KWOK</b></p>
         </div>
     </div>
 </footer>

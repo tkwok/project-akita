@@ -1,6 +1,6 @@
-<section class="section-form" id="contact">
+<section class="section-form js--section-form" id="contact">
     <div class="row">
-        <h2>{{ post.form_section_title }}</h2>
+        <h2>{{ post.section_form_title }}</h2>
     </div>
     <div class="row">
         <form method="post" action="#" class="contact-form">
@@ -26,9 +26,10 @@
                 </div>
                 <div class="col span-2-of-3">
                     <select name="find-us" id="find-us">
-                        <option value="friends">referral</option>
-                        <option value="search" selected>search engine</option>
-                        <option value="ad">advertisement</option>
+                        <option value="referral">referral</option>
+                        <option value="meetup">meetup</option>
+                        <option value="linkedin" selected>linkedin</option>
+                        <option value="search" >search engine</option>
                         <option value="other">other</option>
                     </select>
                 </div>
@@ -43,7 +44,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <label>&nbsp;</label>
+                    <label id="label-send-button-spacing">&nbsp;</label>
                 </div>
                 <div class="col span-2-of-3">
                     <input type="submit" value="send">

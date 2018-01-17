@@ -38,15 +38,18 @@ class StarterSite extends TimberSite {
 
 	function add_to_context( $context ) {
 		$context['menu'] = new TimberMenu();
-        $context['posts'] = Timber::get_posts('post_type=post');
+        
+        $context['posts'] = Timber::get_posts(array(
+            'post_type' => 'post',
+            'orderby' => array(
+                'meta_value_num' => 'DESC',
+                'date' => 'DESC'
+            )
+        ));
+
         $context['pages'] = Timber::get_posts('post_type=page');
 		$context['site'] = $this;
 		return $context;
-	}
-
-	function myfoo( $text ) {
-		$text .= ' bar!';
-		return $text;
 	}
 
 	function add_to_twig( $twig ) {
@@ -56,6 +59,15 @@ class StarterSite extends TimberSite {
 		return $twig;
 	}
 
+    function contact_mail() {
+        $to = 'contact@tkwok.com';
+        $name = 'James Madison';
+        $email = 'steve.jobs@apple.com';
+        $subject = $name + 'Found Me on' + 'Linkedin';
+        $message = $name + 'message: ' + 'Steve I think this computer thing might really take off.';
+
+        wp_mail( $to, $subject, $message );
+    }
 }
 
 new StarterSite();

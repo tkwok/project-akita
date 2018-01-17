@@ -2,35 +2,36 @@
 
 {% include 'html-header.twig' %}
 	{% block head %}
-	{% endblock %}
-	</head>
-    <header>
-        <!-- Header Navigation -->
-        <nav>
-            <div class="row">
-                <ul class="main-nav js--main-nav">                    
-                    {% if post.get_field('header_nav_links') %}
-                        {% for item in post.get_field("header_nav_links") %}
-                            <li><a href="#{{ item.link_id }}">{{ item.link_title }}</a></li>
-                        {% endfor %}
-                    {% endif %}
-                </ul>
-                <a href="#" class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+        {% endblock %}
+        </head>
+        <header id="header">
+            <!-- Header Navigation -->
+            <nav>
+                <div class="row header-row">
+                    <ul class="main-nav js--main-nav">                    
+                        {% if post.get_field('header_nav_links') %}
+                            {% for item in post.get_field("header_nav_links") %}
+                                <li><a href="#{{ item.link_id }}">{{ item.link_title }}</a></li>
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                    <a href="#" class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>
+                    <b>I am Tony Kwok</b><br>
+                    I am working on an Web Application<br>
+                    its language is NodeJS</h1>
+                <a class="btn btn-full js--scroll-to-plan" href="#intro">tell me more</a>
             </div>
-        </nav>
-        <div class="hero-text-box">
-            <h1>
-                <b>I am Tony Kwok</b><br>
-                I am working on an Web Application<br>
-                its language is NodeJS</h1>
-            <a class="btn btn-full js--scroll-to-plan" href="#intro">tell me more</a>
-        </div>
-        <!-- Header Navigation -->
-    </header>
-{% endblock %}
-	<body class="{{body_class}}" data-template="base.twig">        
-        
-        <a id="move-to-top">
+            <!-- Header Navigation -->
+        </header>
+
+        {% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">                
+        <a id="move-to-top" href="#header">
             <i class="ion-arrow-up-b"></i>
         </a>
         <!-- apply twigs here --->
@@ -48,5 +49,7 @@
 		{% endblock %}
 	</body>
 
-    <script type="text/javascript" src="{{site.theme.link}}/js/src/script.js" />
+    <script type="text/javascript" src="{{site.theme.link}}/vendors/js/jquery-3.2.1.min.js"></script>
+    <script src="{{site.theme.link}}/vendors/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="{{site.theme.link}}/js/src/script.js"></script>
 </html>

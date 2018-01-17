@@ -1,3 +1,5 @@
+/* TONY KWOK */
+/* Grid control */
 
 /*  SECTIONS  ============================================================================= */
 
@@ -82,9 +84,9 @@
 }
 
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/*  GO FULL WIDTH AT LESS THAN 768 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
 	.span-3-of-3 {
 		width: 100%; 
 	}
