@@ -6,4 +6,4 @@
 2. Download the zip for this theme (or clone it) and move it to `wp-content/themes` in your WordPress installation. 
 3. Activate the theme in Appearance >  Themes.
 
-Copyright 2017 Tony Kwok
+Copyright 2018 Tony Kwok
