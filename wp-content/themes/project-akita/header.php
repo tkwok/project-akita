@@ -9,3 +9,5 @@
 
 $GLOBALS['timberContext'] = Timber::get_context();
 ob_start();
+
+$response = wp_remote_get( 'https://api.github.com/users/tkwok/repos' );
